@@ -6,7 +6,7 @@ var web = require('./web');
 
 // IRC Bot
 var IRC_TARGET_RE = RegExp('^' + config.irc.nick + ': (.*)$');
-var RESET_RE = RegExp('ohshit|reset|clear');
+var RESET_RE = RegExp('ohshit|reset|clear|lod');
 
 var ircClient = new irc.Client(config.irc.server, config.irc.nick, {
   channels: config.irc.channels
